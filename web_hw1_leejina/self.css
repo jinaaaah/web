@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family : 'Roboto', sans-serif;
+	font-size: 0;
+	padding : 0;
+	margin : 0;
+	background: white;
+}
+	.body__wrap{
+		margin: auto;
+	}
+		.block{
+			width: 100%;
+		}
+		.header{
+			height: 650px;
+		}
+			.navbar, .navbar__container{
+				width: 100%;
+				padding: 10px 50px;
+			}
+			.navbar{
+				position: fixed;
+				height: 60px;
+				background: black;
+			}
+					.navbar__item--title{
+						display: inline;
+						font-size: 20px;
+						color: #adadad;
+					}
+					.navbar__item{
+						display: inline;
+						line-height: 20px;
+						font-size: 15px;
+						color: #adadad;
+						float: right;
+					}
+			.section, .section__container{
+				width: 100%;
+				padding: 50px;
+			}
+			.section{
+				height: 100%;
+				background: #ac6df9;
+			}
+					.section__discription--big{
+						margin-top: 60px;
+						font-size: 120px;
+						font-weight: bolder;
+						color: white;
+						padding: 10px 0;
+					}
+					.section__discription--medium{
+						font-size: 25px;
+						color: black;
+						padding: 10px 120px;
+					}
+					.section__discription--light{
+						padding: 0 120px;
+						font-size: 15px;
+						color: #565656;
+						font-weight: lighter;
+					}
+					.section__discription--small{
+						font-size: 15px;
+						color: #303030;
+						padding: 80px 0;
+						float: right;
+					}
+	.article{
+		padding: 50px;
+	}
+		.project{
+			width: 100%;
+			padding: 0 50px;
+		}
+		.project__title{
+			padding: 0 50px;
+			display: block;
+		}
+			.project__title__text{
+				font-size: 10px;
+			}
+			.project__container{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.project__container__img{
+				width: 30%;
+			}
+				img{
+						display: block;
+						margin: auto;
+						padding:50px 50px 50px 0;
+						max-width: 100%;
+						height: auto;
+				}
+			.project__container__text{
+				height: 100%;
+				padding: 50px;
+				width: 70%;
+			}
+				.project__wrap__text{
+					padding: 50px 0;
+				}
+					.project__name{
+						line-height: 50px;
+						font-size: 30px;
+						font-weight: bold;
+					}
+					.project__comment{
+						font-size: 10px;
+					}
+
+
+		.hover{
+			display: inline;
+			position: relative;
+		}
+		.hover:after {
+			content: '';
+		  	position: absolute;
+		  	bottom: 0;
+		  	left: 0;
+		  	width: 0%;
+		  	border-bottom: 2px solid #fff;
+		  	transition: 0.4s;
+		}
+		.hover:hover:after{
+			width: 100%;
+		}
+		.project__wrap__text > .hover:after{
+			border-bottom: 2px solid black;
+		}
+
+	.footer{
+		padding: 50px;
+		background: #353535;
+	}
+		.footer__container{
+			padding: 0 50px;
+		}
+			.footer__discription{
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				height: 100%;
+			}
+				.footer__copyright{
+					font-size: 12px;
+					color: white;
+					font-weight: bold;
+				}
+				.footer__discription__title{
+					font-size: 10px;
+					font-weight: lighter;
+					color: #adadad;
+				}
+				.footer__link{
+					padding-top: 12px;
+					line-height: 12px;
+					font-size: 12px;
+					color: #adadad;
+					font-weight: bold;
+				}
+					p:hover{
+						color: #eee;
+					}
+
+	@media screen and (max-width: 1000px){
+					.section__discription--big{
+						font-size: 80px;
+					}
+					.section__discription--light, .section__discription--medium{
+						padding: 0px;
+					}
+					.section__discription--small{
+						float: left;
+					}
+						.project{
+							padding: 0 30px;
+						}
+	}
+
+	@media screen and (max-width: 800px){
+		.project{
+							padding: 30px;
+						}
+					.project__title{
+							padding: 0 30px;
+							display: block;
+					}
+						.project__container{
+										display: block;
+										vertical-align: top;
+									}
+								.project__container__img{
+									width: 100%;
+								}
+									img{
+											padding: 0;
+											max-width: 100%;
+									}
+								.project__container__text{
+									padding: 0 10px;
+									width: 100%;
+								}
+									.project__wrap__text{
+										padding: 0;
+									}
+										.project__name{
+											line-height: 50px;
+										}
+				.footer__container{
+					display: flex;
+					flex-direction: column-reverse;
+					vertical-align: bottom;
+				}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
